@@ -8,7 +8,6 @@ $ yarn add babel-plugin-custom-transform-imports -D
 or
 
 $ npm install babel-plugin-custom-transform-imports -D
-
 ```
 
 ## 使用
@@ -92,6 +91,6 @@ module: {
 
 ## 配置
 
-| 字段名      | 类型                                       | 是否必填 | 默认值   | 描述                                                                                                                                                                                                 |
-| ----------- | ------------------------------------------ | -------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `transform` | `string or (importName: string) => string` | 否       | `库名称` | 转换的库名称，而不是在 import 语句中指定的库名。importName 变量代表导入名称，importName 为空表示默认导入（import Bootstrap from "react-bootstrap"）或者全量导入（import \* as lodash from "lodash"） |
+| 字段名    | 类型                                     | 必填 | 默认值 | 描述                                                                                                                                                                                                 |
+| --------- | ---------------------------------------- | ---- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| transform | string \| (importName: string) => string | 否   | 库名称 | 转换的库名称，而不是在 import 语句中指定的库名。importName 变量代表导入名称，importName 为空表示默认导入（import Bootstrap from "react-bootstrap"）或者全量导入（import \* as lodash from "lodash"） |
